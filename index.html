@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LandingPage</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap" rel="stylesheet">
+    <style type="text/css">
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color: lightsteelblue;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            display: flex;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .container{
+            display: flex;
+            background: white;
+            box-shadow: grey;
+            box-shadow: 0 0 20px grey;
+            width: 70wh;
+            overflow: hidden;
+            margin: 10em 5em 10em 5em;
+            flex-direction: row;
+            
+        }
+        .texto{
+            display: grid;
+            grid-template-rows: 0.5fr 0.1fr 0.5fr 0.9fr 0fr;
+            padding: 2em 4em 2em 2em;
+            margin: 2em;
+            width: 45%;
+            height: 75vh;
+        }
+        .img{
+            display: flex;
+            object-position: right;
+            height: 85vh;
+            width: 55%;
+        }
+        .img img{
+            width: auto;
+            object-fit: cover;
+            object-position: bottom center;
+            height: 85vh;
+        }
+        h1{
+            color:orange;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 1.2em;
+        }
+        .boton{
+            display: flex;
+            font-family: 'Roboto',sans-serif;
+            font-size: 1.3em;
+            color:white;
+            background: purple;
+            font-weight: lighter;
+            border-radius: 20px;
+            text-align: center;
+            align-items: center;
+            padding: 0.5em ;
+            width: 6.5em;
+        }
+        h2{
+            font-family: 'Roboto',sans-serif;
+            color: orange;
+            font-weight: 500;
+            font-size: 3.5em;
+            padding-top: 100px;
+        }
+        h3{
+            font-family: 'Roboto',sans-serif;
+            color: purple;
+            font-weight: 900;
+            font-size: 2em;
+            padding-bottom: 30px;;
+        }
+        p{
+            font-family: 'Roboto',sans-serif;
+            color: purple;
+            font-weight: 200;
+            font-size: 1em;
+            line-height: 2em;
+            padding-bottom: 20px;
+        }
+        @media (max-width:900px){
+            .container{
+                font-size: 0.6em;
+                width: 80%;
+                height: 60vh;
+                margin: 2em;
+            }
+            
+            .img{
+                height: 60vh;
+            }
+            .img img{
+                height: 60vh;
+            }
+            .texto{
+                height: 55vh;
+            }
+        @media (max-width:600px){
+            .container{
+                font-size: 0.4em;
+                width: 80%;
+                height: 40vh;
+                margin: 1em;
+            }
+            .img img{
+                height: 40vh;
+            }
+            .texto{
+                height: 35vh;
+            }
+            .img{
+                height: 40vh;
+            }
+            
+        }
+        /* 5. organizar y jerarquizar. construimos divs*/
+    </style>
+</head>
+<body>
+   <div class="container">
+      <div class="texto">
+       <h1>COMPANYLOGO</h1>
+       <h2>START UP</h2>
+       <h3>Bussines Plan</h3>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem odio error distinctio eum, dolorum excepturi officia reiciendis eius sequi animi sunt repudiandae, cumque illo tempore necessitatibus laborum hic aspernatur labore.</p>
+          <div class="boton">Learn more</div>
+       </div>
+       <div class="img">
+           <img src="img/Sin%20t%C3%ADtulo-1.svg">
+       </div>
+   </div>
+    <!-- 1. contingut h1, h2, h3, h4, p ,div img-->
+</body>
+</html>
